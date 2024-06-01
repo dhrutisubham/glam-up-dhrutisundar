@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+@font-face {
+    font-family: 'Beach';
+    src: url('./fonts/Beach-Regular.ttf') format('truetype');
+}
+
+
+:root{
+    --bg-color: #EEDAC4;
+    --cta-red: #7B1D00;
+    --card-bg: #FBFFE1;
+    --button-stroke: #DDE1C3;
+
+}
+
+
+html{
+    background-color: var(--bg-color);
+    background-image: url(./svgs/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-weight: unset;
+}
+
+h1, h2, h3{
+    font-family: 'Beach', serif;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    opacity: 0;
+    height: 200vh;
+
+} 
