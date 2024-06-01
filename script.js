@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const spans = words.map((word, index) => {
       // Group "in the world" into one <span>
       if (index === 2) {
-        return `<span>${words.slice(2).join(' ')}</span>`;
+        return `<span id=${index}>${words.slice(2).join(' ')}</span>`;
       }
       // Wrap other words individually
       if (index < 2) {
-        return `<span>${word}</span>`;
+        return `<span id=${index}>${word}</span>`;
       }
       // Ignore the remaining words as they are already grouped
       return '';
