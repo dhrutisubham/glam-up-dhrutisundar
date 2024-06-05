@@ -7,6 +7,11 @@
   --paper-stroke: #dde1c3;
 }
 
+::selection {
+  background: #7b1d00e0;
+  color: var(--paper);
+}
+
 @font-face {
   font-family: "Beach";
   src: url("./fonts/Beach-Regular.ttf")
